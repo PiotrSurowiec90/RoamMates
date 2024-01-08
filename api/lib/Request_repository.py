@@ -2,6 +2,7 @@ from lib.Request import Request
 from lib.Profile import Profile
 from lib.User import User
 
+
 class RequestRepository:
     def __init__(self, connection):
         self._connection = connection
@@ -70,14 +71,12 @@ class RequestRepository:
                 row["p_name"],
                 row["p_age"],
                 row["p_gender"],
-                row["p_bio"]
+                row["p_bio"],
             )
             for row in rows
         ]
         return user_data
-    
 
-    
     # Function returning a status of request between session user and accesed profile user
     # For custom reject/accept/contact details/send request button
     # “” -> “send request”

@@ -21,10 +21,10 @@ def apply_request_routes(app):
         Returns:
             _type_: Json (message and list of users.)
         """
-        
+
         status = str(status)
         connection = get_flask_database_connection(app)
-        token = request.headers['Authorization'][7:]
+        token = request.headers["Authorization"][7:]
         user_id = session.get("user_id")
 
         if not token_checker(token, user_id):

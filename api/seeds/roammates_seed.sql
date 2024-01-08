@@ -21,8 +21,8 @@ CREATE TABLE users (
 
 INSERT INTO users (username, password, email) VALUES ('amina', 'amina1', 'amina@gmail.com');
 INSERT INTO users (username, password, email) VALUES ('daniel', 'daniel1', 'daniel@gmail.com');
--- INSERT INTO users (username, password, email) VALUES ('piotr', 'piotr1', 'piotr@gmail.com');
--- INSERT INTO users (username, password, email) VALUES ('david', 'david1', 'david1@gmail.com');
+INSERT INTO users (username, password, email) VALUES ('piotr', 'piotr1', 'piotr@gmail.com');
+INSERT INTO users (username, password, email) VALUES ('david', 'david1', 'david1@gmail.com');
 
 
 -- Then, we recreate them
@@ -39,8 +39,8 @@ CREATE TABLE profiles (
 
 INSERT INTO profiles (user_id, picture, name, age, gender, bio) VALUES (1, 'https://www.echoclinics.nhs.uk/wp-content/uploads/female-placeholder.jpg', 'Amina', '28', 'Female', 'Test bio Amina');
 INSERT INTO profiles (user_id, picture, name, age, gender, bio) VALUES (2, 'https://www.treasury.gov.ph/wp-content/uploads/2022/01/male-placeholder-image.jpeg', 'Daniel', '24', 'Male', 'Test bio Daniel');
--- INSERT INTO profiles (user_id, picture, name, age, gender, bio) VALUES (3, 'https://www.echoclinics.nhs.uk/wp-content/uploads/female-placeholder.jpg', 'Piotr', '33', 'Male', 'Test bio Piotr');
--- INSERT INTO profiles (user_id, picture, name, age, gender, bio) VALUES (4, 'https://www.treasury.gov.ph/wp-content/uploads/2022/01/male-placeholder-image.jpeg', 'David', '24', 'Male', 'Test bio David');
+INSERT INTO profiles (user_id, picture, name, age, gender, bio) VALUES (3, 'https://www.echoclinics.nhs.uk/wp-content/uploads/female-placeholder.jpg', 'Piotr', '33', 'Male', 'Test bio Piotr');
+INSERT INTO profiles (user_id, picture, name, age, gender, bio) VALUES (4, 'https://www.treasury.gov.ph/wp-content/uploads/2022/01/male-placeholder-image.jpeg', 'David', '24', 'Male', 'Test bio David');
 
 CREATE SEQUENCE IF NOT EXISTS requests_id_seq;
 CREATE TABLE requests (

@@ -29,6 +29,24 @@ def test_get_all_users(db_connection):
             "Male",
             "Test bio Daniel",
         ),
+        Profile(
+            3,
+            User(3, "piotr", None, "piotr@gmail.com"),
+            "https://www.echoclinics.nhs.uk/wp-content/uploads/female-placeholder.jpg",
+            "Piotr",
+            "33",
+            "Male",
+            "Test bio Piotr",
+        ),
+        Profile(
+            4,
+            User(4, "david", None, "david1@gmail.com"),
+            "https://www.treasury.gov.ph/wp-content/uploads/2022/01/male-placeholder-image.jpeg",
+            "David",
+            "24",
+            "Male",
+            "Test bio David",
+        ),
     ]
 
 

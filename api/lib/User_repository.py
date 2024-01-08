@@ -17,6 +17,7 @@ class UserRepository:
     Function adds new user to users table
     and new profile with user_id and null values
     """
+
     def add(self, user_object):
         query = """
         WITH create_user AS (
@@ -28,7 +29,9 @@ class UserRepository:
         SELECT id, null, null, null, null, null FROM create_user;
         """
 
-        self._connection.execute(query, [user_object.username, user_object.password, user_object.email])
+        self._connection.execute(
+            query, [user_object.username, user_object.password, user_object.email]
+        )
 
     def find_by_id(self, user_id):
         rows = self._connection.execute("SELECT * from USERS WHERE id = %s", [user_id])

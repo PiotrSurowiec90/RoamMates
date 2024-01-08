@@ -5,6 +5,7 @@ from lib.database_connection import get_flask_database_connection
 from lib.User_repository import UserRepository
 from lib.User import User
 
+
 def apply_user_routes(app):
     """User Router."""
 
@@ -37,4 +38,3 @@ def apply_user_routes(app):
             response.status_code = 200
 
         return response
-
