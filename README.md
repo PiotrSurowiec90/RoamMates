@@ -31,6 +31,7 @@ RoamMates is a web app that helps you connect with prospective travel buddies wh
 - [Piotr Surowiec](https://github.com/PiotrSurowiec90)
 - [Dave O'Donnell](https://github.com/SoundMotives)
 - [Daniel Kruszewski](https://github.com/DANKRUSZ)
+- [Ovie Eharisi-Ayomah](https://github.com/Ovie-Eharisi-Ayomah)
 
 
 ## Features
